@@ -3,6 +3,7 @@ package com.ada;
 import com.ada.task.Task;
 import com.ada.task.additional.Task1;
 import com.ada.task.additional.Task2;
+import com.ada.task.additional.Task3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +15,7 @@ public class Main {
 
         tasks.add(new Task1());
         tasks.add(new Task2());
+        tasks.add(new Task3());
 
         for (Task task : tasks) {
             task.execute();

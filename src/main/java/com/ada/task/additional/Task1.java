@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Task1 implements Task {
 
-    public int[] partsSums(int[] ls) {
+    private int[] partsSums(int[] ls) {
         int[] result = new int[ls.length + 1];
 
         for (int i = ls.length - 1; i >= 0; i--) {

@@ -3,7 +3,6 @@ package com.ada.task.additional;
 import com.ada.task.Task;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class Task3 implements Task {
@@ -22,6 +21,7 @@ public class Task3 implements Task {
 
     @Override
     public void execute() {
+
         System.out.println(pyramid(0));
         System.out.println(pyramid(1));
         System.out.println(pyramid(2));

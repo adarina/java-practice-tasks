@@ -26,6 +26,11 @@ public class Main {
 
         tasks.add(new com.ada.task.set7.Task9());
 
+        tasks.add(new com.ada.task.set8.Task8());
+
+        tasks.add(new com.ada.task.set9.Task4());
+        tasks.add(new com.ada.task.set9.Task9());
+
         for (Task task : tasks) {
             task.execute();
         }

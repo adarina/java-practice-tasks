@@ -1,0 +1,17 @@
+package com.ada.task.patternchainofresponsibility;
+
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.regex.Pattern;
+
+class PhoneCheckValidator extends UserValidator {
+    private static final Pattern PHONE_PATTERN = Pattern.compile("\\d{9}");
+
+    @Override
+    public boolean check(User user) {
+        if (StringUtils.isBlank(user.getPhone()) || !PHONE_PATTERN.matcher(user.getPhone()).matches()) {
+            return false;
+        }
+        return checkNext(user);
+    }
+}

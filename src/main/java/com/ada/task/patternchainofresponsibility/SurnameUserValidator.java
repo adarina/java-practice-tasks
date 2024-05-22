@@ -4,7 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.regex.Pattern;
 
-class SurnameCheckUserValidator extends UserValidator {
+class SurnameUserValidator extends UserValidator {
     private static final Pattern SURNAME_PATTERN = Pattern.compile("[A-Za-z]+");
 
     @Override

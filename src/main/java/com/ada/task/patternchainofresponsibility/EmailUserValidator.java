@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
 
 
-public class EmailCheckUserValidator extends UserValidator {
+public class EmailUserValidator extends UserValidator {
 
     private static final Pattern EMAIL_PATTERN = Pattern.compile("^(.+)@(.+)$");
 

@@ -13,11 +13,11 @@ public class UserValidatorTest {
     @BeforeEach
     void setUp() {
         userValidator = UserValidator.link(
-                new EmailCheckUserValidator(),
-                new NameCheckUserValidator(),
-                new PasswordCheckUserValidator(),
-                new PhoneCheckValidator(),
-                new SurnameCheckUserValidator()
+                new EmailUserValidator(),
+                new NameUserValidator(),
+                new PasswordUserValidator(),
+                new PhoneUserValidator(),
+                new SurnameUserValidator()
         );
     }
 

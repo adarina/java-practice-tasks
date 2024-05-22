@@ -4,7 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.regex.Pattern;
 
-class PhoneUserValidator extends UserValidator {
+public class PhoneUserValidator extends UserValidator {
     private static final Pattern PHONE_PATTERN = Pattern.compile("\\d{9}");
 
     @Override

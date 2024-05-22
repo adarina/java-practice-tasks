@@ -4,7 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.regex.Pattern;
 
-class NameUserValidator extends UserValidator {
+public class NameUserValidator extends UserValidator {
 
     private static final Pattern NAME_PATTERN = Pattern.compile("[A-Za-z]+");
 

@@ -2,7 +2,7 @@ package com.ada.task.patternchainofresponsibility;
 
 import org.apache.commons.lang3.StringUtils;
 
-class PasswordUserValidator extends UserValidator {
+public class PasswordUserValidator extends UserValidator {
 
     @Override
     public boolean check(User user) {
